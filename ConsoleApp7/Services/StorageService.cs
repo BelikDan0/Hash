@@ -5,8 +5,13 @@ using HashSystem.Models;
 
 namespace HashSystem.Services
 {
+    /// <summary>
+    /// Сервис для сохранения и загрузки данных (пользователи, записи файлов, журнал операций) в текстовые файлы.
+    /// Формат: разделитель '|', даты в ISO 8601 (Round-trip).
+    /// </summary>
     public class StorageService
     {
+        /// <summary>Создаёт директорию для файла, если её нет.</summary>
         private void EnsureDirectory(string filePath)
         {
             string dir = Path.GetDirectoryName(filePath);
@@ -14,6 +19,11 @@ namespace HashSystem.Services
                 Directory.CreateDirectory(dir);
         }
 
+        /// <summary>Сохраняет список пользователей в файл.</summary>
+        /// <param name="filePath">Путь к файлу.</param>
+        /// <param name="users">Список пользователей.</param>
+        /// <exception cref="ArgumentNullException">Если путь или список null.</exception>
+        /// <exception cref="IOException">Ошибка записи.</exception>
         public void SaveCredentials(string filePath, List<UserCredential> users)
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
@@ -35,6 +45,11 @@ namespace HashSystem.Services
             }
         }
 
+        /// <summary>Загружает список пользователей из файла.</summary>
+        /// <param name="filePath">Путь к файлу.</param>
+        /// <returns>Список пользователей (пустой, если файл не существует).</returns>
+        /// <exception cref="ArgumentNullException">Если путь null.</exception>
+        /// <exception cref="FormatException">Некорректный формат данных.</exception>
         public List<UserCredential> LoadCredentials(string filePath)
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
@@ -69,6 +84,9 @@ namespace HashSystem.Services
             return users;
         }
 
+        /// <summary>Сохраняет записи о файлах.</summary>
+        /// <param name="filePath">Путь к файлу.</param>
+        /// <param name="records">Список записей.</param>
         public void SaveFileRecords(string filePath, List<FileRecord> records)
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
@@ -90,6 +108,7 @@ namespace HashSystem.Services
             }
         }
 
+        /// <summary>Загружает записи о файлах.</summary>
         public List<FileRecord> LoadFileRecords(string filePath)
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));
@@ -122,6 +141,7 @@ namespace HashSystem.Services
             return records;
         }
 
+        /// <summary>Сохраняет журнал операций.</summary>
         public void SaveLogs(string filePath, List<HashLog> logs)
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentNullException(nameof(filePath));

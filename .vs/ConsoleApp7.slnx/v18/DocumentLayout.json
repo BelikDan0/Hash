@@ -1,66 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\",
+  "WorkspaceRootPath": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\models\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\storageservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\storageservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\hashservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\hashservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\services\\hashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\hashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\models\\hashlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\hashlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\hashservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\hashservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\fileintegrityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\fileintegrityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\fileintegrityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\fileintegrityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\services\\fileintegrityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\fileintegrityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\testproject1\\storageservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146A5596-9FB9-4F10-893A-45A633C9B138}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\storageservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\services\\hashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\hashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\services\\fileintegrityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\fileintegrityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\models\\hashlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\hashlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\hash\\consoleapp7\\models\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAEC81D-C366-D28B-496D-8C3D2DB668CB}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\models\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\106010190\\documents\\github\\---4\\consoleapp7\\consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50E225A2-59DC-4B38-B73C-C6D5EC362A95}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|c:\\users\\106010190\\documents\\github\\hash\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6F84B464-D2A2-BADB-55FE-4525AFA1BDD6}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,202 +70,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TestProject1",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\TestProject1.csproj",
+              "DocumentIndex": 14,
+              "Title": "TestProject1.csproj",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\TestProject1.csproj",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\TestProject1.csproj",
               "RelativeToolTip": "TestProject1\\TestProject1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-14T13:39:39.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T13:39:39.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "IntegrationTests.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\IntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\IntegrationTests.cs",
               "RelativeDocumentMoniker": "TestProject1\\IntegrationTests.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\IntegrationTests.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\IntegrationTests.cs",
               "RelativeToolTip": "TestProject1\\IntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T13:51:40.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StorageServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\StorageServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject1\\StorageServiceTests.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\StorageServiceTests.cs",
-              "RelativeToolTip": "TestProject1\\StorageServiceTests.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAuwBIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T13:45:56.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FileIntegrityServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\FileIntegrityServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject1\\FileIntegrityServiceTests.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\FileIntegrityServiceTests.cs",
-              "RelativeToolTip": "TestProject1\\FileIntegrityServiceTests.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAmwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T13:44:48.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T13:51:40.447Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "StorageServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\StorageServiceTests.cs",
+              "RelativeDocumentMoniker": "TestProject1\\StorageServiceTests.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\StorageServiceTests.cs",
+              "RelativeToolTip": "TestProject1\\StorageServiceTests.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T13:45:56.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileIntegrityServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\FileIntegrityServiceTests.cs",
+              "RelativeDocumentMoniker": "TestProject1\\FileIntegrityServiceTests.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\FileIntegrityServiceTests.cs",
+              "RelativeToolTip": "TestProject1\\FileIntegrityServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T13:44:48.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\UserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\UserServiceTest.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\UserServiceTest.cs",
               "RelativeToolTip": "TestProject1\\UserServiceTest.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAswDYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwHwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T13:42:38.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HashServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\HashServiceTest.cs",
-              "RelativeDocumentMoniker": "TestProject1\\HashServiceTest.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\HashServiceTest.cs",
-              "RelativeToolTip": "TestProject1\\HashServiceTest.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwGYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T13:40:22.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TestHelpers.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\TestHelpers.cs",
-              "RelativeDocumentMoniker": "TestProject1\\TestHelpers.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\TestHelpers.cs",
-              "RelativeToolTip": "TestProject1\\TestHelpers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T13:37:31.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StorageService.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\StorageService.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\StorageService.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\StorageService.cs",
-              "RelativeToolTip": "ConsoleApp7\\Services\\StorageService.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAUwJEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:04:42.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HashService.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\HashService.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\HashService.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\HashService.cs",
-              "RelativeToolTip": "ConsoleApp7\\Services\\HashService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwKEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:04:00.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FileIntegrityService.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\FileIntegrityService.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\FileIntegrityService.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\FileIntegrityService.cs",
-              "RelativeToolTip": "ConsoleApp7\\Services\\FileIntegrityService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIAwwEYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:03:28.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserCredential.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\UserCredential.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\UserCredential.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\UserCredential.cs",
-              "RelativeToolTip": "ConsoleApp7\\Models\\UserCredential.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAywC4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:02:44.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "HashLog.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\HashLog.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\HashLog.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\HashLog.cs",
-              "RelativeToolTip": "ConsoleApp7\\Models\\HashLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Title": "HashServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\HashServiceTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\HashServiceTest.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\HashServiceTest.cs",
+              "RelativeToolTip": "TestProject1\\HashServiceTest.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwI0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:02:37.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T13:40:22.612Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FileRecord.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\FileRecord.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\FileRecord.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Models\\FileRecord.cs",
-              "RelativeToolTip": "ConsoleApp7\\Models\\FileRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Title": "TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "TestProject1\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\TestHelpers.cs",
+              "RelativeToolTip": "TestProject1\\TestHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:01:48.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T13:37:31.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StorageService.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\StorageService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\StorageService.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\StorageService.cs",
+              "RelativeToolTip": "ConsoleApp7\\Services\\StorageService.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAYwKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:04:42.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HashService.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\HashService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\HashService.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\HashService.cs",
+              "RelativeToolTip": "ConsoleApp7\\Services\\HashService.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAYwOkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:04:00.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FileIntegrityService.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\FileIntegrityService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\FileIntegrityService.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\FileIntegrityService.cs",
+              "RelativeToolTip": "ConsoleApp7\\Services\\FileIntegrityService.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwIkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:03:28.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCredential.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\UserCredential.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\UserCredential.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\UserCredential.cs",
+              "RelativeToolTip": "ConsoleApp7\\Models\\UserCredential.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:02:44.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HashLog.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\HashLog.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\HashLog.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\HashLog.cs",
+              "RelativeToolTip": "ConsoleApp7\\Models\\HashLog.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA4wDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:02:37.211Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Services\\UserService.cs",
-              "RelativeToolTip": "ConsoleApp7\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
+              "Title": "FileRecord.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\FileRecord.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Models\\FileRecord.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Models\\FileRecord.cs",
+              "RelativeToolTip": "ConsoleApp7\\Models\\FileRecord.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T10:47:07.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:01:48.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Program.cs",
-              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\ConsoleApp7\\Program.cs",
-              "RelativeToolTip": "ConsoleApp7\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwEwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Services\\UserService.cs",
+              "RelativeToolTip": "ConsoleApp7\\Services\\UserService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwH0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T10:45:40.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T10:47:07.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp7\\Program.cs",
+              "ToolTip": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\ConsoleApp7\\Program.cs",
+              "RelativeToolTip": "ConsoleApp7\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:45:40.416Z"
             }
           ]
         }

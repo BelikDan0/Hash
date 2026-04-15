@@ -7,6 +7,9 @@ using Xunit;
 
 namespace TestProject1
 {
+    /// <summary>
+    /// Модульные тесты для сервиса хранения данных <see cref="StorageService"/>.
+    /// </summary>
     public class StorageServiceTests : IDisposable
     {
         private readonly StorageService _storage;
@@ -26,16 +29,19 @@ namespace TestProject1
                 Directory.Delete(TestDir, true);
         }
 
-        // TC-15: Неверный путь (недопустимые символы) -> IOException
+        /// <summary>
+        /// TC-15: Проверяет, что при попытке сохранить данные по пути с недопустимыми символами выбрасывается IOException.
+        /// </summary>
         [Fact]
         public void SaveCredentials_InvalidPath_ThrowsIOException()
         {
             var users = new List<UserCredential>();
-            // Недопустимые символы в пути
             Assert.Throws<IOException>(() => _storage.SaveCredentials("|?*invalid", users));
         }
 
-        // Доп. тест: сохранение и загрузка пользователей
+        /// <summary>
+        /// Дополнительный тест: проверяет, что после сохранения и последующей загрузки данные пользователя остаются неизменными.
+        /// </summary>
         [Fact]
         public void SaveAndLoadCredentials_Roundtrip_DataPreserved()
         {
@@ -51,7 +57,9 @@ namespace TestProject1
             Assert.Equal("salt1", loaded[0].Salt);
         }
 
-        // Доп. тест: загрузка несуществующего файла -> пустой список
+        /// <summary>
+        /// Дополнительный тест: проверяет, что загрузка из несуществующего файла возвращает пустой список, а не выбрасывает исключение.
+        /// </summary>
         [Fact]
         public void LoadCredentials_FileNotExist_ReturnsEmptyList()
         {
@@ -59,7 +67,9 @@ namespace TestProject1
             Assert.Empty(result);
         }
 
-        // Доп. тест: повреждённый файл -> FormatException
+        /// <summary>
+        /// Дополнительный тест: проверяет, что при загрузке повреждённого файла (неверный формат) выбрасывается FormatException.
+        /// </summary>
         [Fact]
         public void LoadCredentials_CorruptedFile_ThrowsFormatException()
         {
@@ -67,7 +77,9 @@ namespace TestProject1
             Assert.Throws<FormatException>(() => _storage.LoadCredentials(_testFile));
         }
 
-        // Доп. тест: сохранение и загрузка FileRecord с LastCheckedAt
+        /// <summary>
+        /// Дополнительный тест: проверяет, что при сохранении и загрузке записей о файлах поле LastCheckedAt не теряется.
+        /// </summary>
         [Fact]
         public void SaveAndLoadFileRecords_Roundtrip_PreservesLastCheckedAt()
         {
@@ -82,7 +94,9 @@ namespace TestProject1
             Assert.Equal(record.LastCheckedAt.Value.ToString("O"), loaded[0].LastCheckedAt.Value.ToString("O"));
         }
 
-        // Доп. тест: сохранение логов
+        /// <summary>
+        /// Дополнительный тест: проверяет, что сохранение логов создаёт файл и он не пуст.
+        /// </summary>
         [Fact]
         public void SaveLogs_ValidLogs_FileCreated()
         {

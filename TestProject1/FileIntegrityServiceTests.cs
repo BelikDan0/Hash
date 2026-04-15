@@ -6,6 +6,9 @@ using Xunit;
 
 namespace TestProject1
 {
+    /// <summary>
+    /// Модульные тесты для сервиса контроля целостности файлов <see cref="FileIntegrityService"/>.
+    /// </summary>
     public class FileIntegrityServiceTests : IDisposable
     {
         private readonly HashService _hashService;
@@ -30,7 +33,14 @@ namespace TestProject1
             File.WriteAllText(_testFile, content);
         }
 
-        // TC-12: Регистрация существующего файла
+        /// <summary>
+        /// TC-12: Проверяет, что регистрация существующего файла создаёт запись с корректным хешем (длина 64 для SHA256).
+        /// </summary>
+        /// <remarks>
+        /// Предусловия: временный файл с содержимым "content".
+        /// Действие: вызов RegisterFile с алгоритмом SHA256.
+        /// Ожидаемый результат: запись не null, путь совпадает, длина хеша равна 64.
+        /// </remarks>
         [Fact]
         public void RegisterFile_ExistingFile_RecordAdded()
         {
@@ -41,7 +51,14 @@ namespace TestProject1
             Assert.Equal(64, record.OriginalHash.Length);
         }
 
-        // TC-13: Файл не изменён -> true
+        /// <summary>
+        /// TC-13: Проверяет, что для неизменённого файла VerifyFile возвращает true.
+        /// </summary>
+        /// <remarks>
+        /// Предусловия: файл зарегистрирован, содержимое не менялось.
+        /// Действие: вызов VerifyFile.
+        /// Ожидаемый результат: true.
+        /// </remarks>
         [Fact]
         public void VerifyFile_UnchangedFile_ReturnsTrue()
         {
@@ -51,7 +68,14 @@ namespace TestProject1
             Assert.True(result);
         }
 
-        // TC-14: Файл изменён -> DataMisalignedException
+        /// <summary>
+        /// TC-14: Проверяет, что для изменённого файла VerifyFile выбрасывает DataMisalignedException.
+        /// </summary>
+        /// <remarks>
+        /// Предусловия: файл зарегистрирован, затем содержимое изменено.
+        /// Действие: вызов VerifyFile.
+        /// Ожидаемый результат: исключение DataMisalignedException.
+        /// </remarks>
         [Fact]
         public void VerifyFile_ChangedFile_ThrowsDataMisalignedException()
         {
@@ -61,7 +85,9 @@ namespace TestProject1
             Assert.Throws<DataMisalignedException>(() => _integrityService.VerifyFile(_testFile));
         }
 
-        // Доп. тест: файл не зарегистрирован
+        /// <summary>
+        /// Дополнительный тест: проверяет, что вызов VerifyFile для незарегистрированного файла вызывает InvalidOperationException.
+        /// </summary>
         [Fact]
         public void VerifyFile_NotRegistered_ThrowsInvalidOperationException()
         {
@@ -69,14 +95,18 @@ namespace TestProject1
             Assert.Throws<InvalidOperationException>(() => _integrityService.VerifyFile(_testFile));
         }
 
-        // Доп. тест: файл не существует при регистрации
+        /// <summary>
+        /// Дополнительный тест: проверяет, что RegisterFile для несуществующего файла выбрасывает FileNotFoundException.
+        /// </summary>
         [Fact]
         public void RegisterFile_FileNotExist_ThrowsFileNotFoundException()
         {
             Assert.Throws<FileNotFoundException>(() => _integrityService.RegisterFile("nonexistent.txt"));
         }
 
-        // Доп. тест: загрузка записей и проверка LastCheckedAt
+        /// <summary>
+        /// Дополнительный тест: проверяет, что после успешной проверки файла поле LastCheckedAt обновляется.
+        /// </summary>
         [Fact]
         public void LoadRecords_ThenVerify_UpdatesLastCheckedAt()
         {

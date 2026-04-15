@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jaMWvIVM4dk=",
+  "dgSpecHash": "Zbj3LOmi6Xk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\106010190\\Documents\\GitHub\\---4\\ConsoleApp7\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\106010190\\Documents\\GitHub\\Hash\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\106010190\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\106010190\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",

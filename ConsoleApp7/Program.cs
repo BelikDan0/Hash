@@ -7,6 +7,7 @@ namespace HashSystem
 {
     internal class Program
     {
+        /// <summary>Точка входа в консольное приложение. Демонстрирует работу сервисов.</summary>
         static void Main(string[] args)
         {
             // Создаём папку Data заранее (исправление ошибки)
@@ -19,11 +20,9 @@ namespace HashSystem
 
             Console.WriteLine("=== Хеширование строк ===");
             string text = "Hello, World!";
-
             string sha256 = hashService.ComputeSha256(text);
             string sha512 = hashService.ComputeSha512(text);
             string md5 = hashService.ComputeMd5(text);
-
             Console.WriteLine($"SHA-256 : {sha256}");
             Console.WriteLine($"SHA-512 : {sha512}");
             Console.WriteLine($"MD5     : {md5}");
@@ -54,11 +53,11 @@ namespace HashSystem
 
             Console.WriteLine("\n=== Заблокированные аккаунты ===");
             Console.WriteLine($"Заблокировано: {userService.CountLockedUsers()}");
+
             Console.WriteLine("\n=== Целостность файлов ===");
             File.WriteAllText("test.txt", "Данные для проверки");
             var record = integrityService.RegisterFile("test.txt", "SHA256");
             Console.WriteLine($"Зарегистрирован: {record}");
-
             bool intact = integrityService.VerifyFile("test.txt");
             Console.WriteLine($"Файл не изменён: {intact}");
 
@@ -74,11 +73,9 @@ namespace HashSystem
             }
             Console.WriteLine($"После изменения: {tampered}");
 
-
             Console.WriteLine("\n=== Сохранение данных ===");
             storageService.SaveCredentials("Data/users.txt", userService.GetAll());
             storageService.SaveFileRecords("Data/records.txt", integrityService.GetAll());
-            // Добавляем хотя бы одну запись в лог для демонстрации (как в оригинале)
             hashService.LogOperation("demo", "Тест", "SHA256", text, sha256, true);
             storageService.SaveLogs("Data/logs.txt", hashService.GetLogs());
             Console.WriteLine("Данные сохранены.");
@@ -89,7 +86,6 @@ namespace HashSystem
             Console.WriteLine($"Загружено пользователей : {loadedUsers.Count}");
             Console.WriteLine($"Загружено записей файлов: {loadedRecords.Count}");
 
-            // Передаём загруженные данные обратно в сервисы (исправление ошибки)
             userService.LoadUsers(loadedUsers);
             integrityService.LoadRecords(loadedRecords);
 
