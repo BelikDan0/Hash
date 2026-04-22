@@ -1,3 +1,4 @@
+#nullable disable
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -215,7 +216,7 @@ namespace HashSystem.Services
         /// <param name="resultHash">Результат хеширования (может быть null).</param>
         /// <param name="success">Успех операции.</param>
         /// <param name="error">Сообщение об ошибке (необязательно).</param>
-        public void LogOperation(string id, string operation, string algorithm, string preview, string? resultHash, bool success, string? error = null)
+        public void LogOperation(string id, string operation, string algorithm, string preview, string resultHash, bool success, string error = null)
         {
             if (string.IsNullOrEmpty(id)) throw new ArgumentNullException(nameof(id));
             if (string.IsNullOrEmpty(operation)) throw new ArgumentNullException(nameof(operation));

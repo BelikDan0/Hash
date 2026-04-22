@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable disable
+using System;
 using System.IO;
 using System.Data;
 using HashSystem.Services;
@@ -15,18 +16,29 @@ namespace TestProject1
         private readonly FileIntegrityService _integrityService;
         private string _testFile;
 
+        /// <summary>
+        /// Инициализирует новый экземпляр тестового класса.
+        /// Создаёт экземпляры <see cref="HashService"/> и <see cref="FileIntegrityService"/>.
+        /// </summary>
         public FileIntegrityServiceTests()
         {
             _hashService = new HashService();
             _integrityService = new FileIntegrityService(_hashService);
         }
 
+        /// <summary>
+        /// Освобождает ресурсы: удаляет временный файл, если он был создан.
+        /// </summary>
         public void Dispose()
         {
             if (_testFile != null && File.Exists(_testFile))
                 File.Delete(_testFile);
         }
 
+        /// <summary>
+        /// Вспомогательный метод: создаёт временный файл с заданным содержимым.
+        /// </summary>
+        /// <param name="content">Содержимое файла.</param>
         private void CreateTestFile(string content)
         {
             _testFile = Path.GetTempFileName();
@@ -76,6 +88,7 @@ namespace TestProject1
         /// Действие: вызов VerifyFile.
         /// Ожидаемый результат: исключение DataMisalignedException.
         /// </remarks>
+        /// <exception cref="DataMisalignedException">Ожидается при изменении файла.</exception>
         [Fact]
         public void VerifyFile_ChangedFile_ThrowsDataMisalignedException()
         {
@@ -88,6 +101,7 @@ namespace TestProject1
         /// <summary>
         /// Дополнительный тест: проверяет, что вызов VerifyFile для незарегистрированного файла вызывает InvalidOperationException.
         /// </summary>
+        /// <exception cref="InvalidOperationException">Ожидается, так как файл не зарегистрирован.</exception>
         [Fact]
         public void VerifyFile_NotRegistered_ThrowsInvalidOperationException()
         {
@@ -98,6 +112,7 @@ namespace TestProject1
         /// <summary>
         /// Дополнительный тест: проверяет, что RegisterFile для несуществующего файла выбрасывает FileNotFoundException.
         /// </summary>
+        /// <exception cref="FileNotFoundException">Ожидается, так как файл не существует.</exception>
         [Fact]
         public void RegisterFile_FileNotExist_ThrowsFileNotFoundException()
         {
@@ -116,5 +131,139 @@ namespace TestProject1
             _integrityService.VerifyFile(_testFile);
             Assert.NotNull(record.LastCheckedAt);
         }
+
+        /// <summary>
+        /// Проверяет, что GetTamperedFiles возвращает список изменённых файлов.
+        /// </summary>
+        [Fact]
+        public void GetTamperedFiles_ReturnsModifiedFiles()
+        {
+            CreateTestFile("original1");
+            _integrityService.RegisterFile(_testFile, "SHA256");
+            string file2 = Path.GetTempFileName();
+            File.WriteAllText(file2, "original2");
+            _integrityService.RegisterFile(file2, "SHA256");
+            File.WriteAllText(_testFile, "changed");
+            var tampered = _integrityService.GetTamperedFiles();
+            Assert.Contains(tampered, r => r.FilePath == _testFile);
+            Assert.DoesNotContain(tampered, r => r.FilePath == file2);
+            File.Delete(file2);
+        }
+
+        /// <summary>
+        /// Проверяет, что VerifyFile работает с алгоритмом MD5.
+        /// </summary>
+        [Fact]
+        public void VerifyFile_WithMD5_Works()
+        {
+            CreateTestFile("test data");
+            _integrityService.RegisterFile(_testFile, "MD5");
+            bool result = _integrityService.VerifyFile(_testFile);
+            Assert.True(result);
+        }
+
+        /// <summary>
+        /// Проверяет, что RegisterFile с MD5 работает.
+        /// </summary>
+        [Fact]
+        public void RegisterFile_WithMD5_Works()
+        {
+            CreateTestFile("data");
+            var record = _integrityService.RegisterFile(_testFile, "MD5");
+            Assert.Equal(32, record.OriginalHash.Length);
+        }
+
+        /// <summary>
+        /// Проверяет, что ComputeFileHash с неподдерживаемым алгоритмом вызывает NotSupportedException.
+        /// </summary>
+        /// <exception cref="NotSupportedException">Ожидается при использовании неподдерживаемого алгоритма.</exception>
+        [Fact]
+        public void ComputeFileHash_UnsupportedAlgorithm_ThrowsNotSupportedException()
+        {
+            CreateTestFile("data");
+            Assert.Throws<NotSupportedException>(() => _integrityService.RegisterFile(_testFile, "UNKNOWN"));
+        }
+
+        /// <summary>
+        /// Проверяет, что GetTamperedFiles добавляет файл, если он был удалён после регистрации.
+        /// </summary>
+        [Fact]
+        public void GetTamperedFiles_WhenFileDeleted_ReturnsAsTampered()
+        {
+            CreateTestFile("data");
+            _integrityService.RegisterFile(_testFile, "SHA256");
+            File.Delete(_testFile);
+            var tampered = _integrityService.GetTamperedFiles();
+            Assert.Contains(tampered, r => r.FilePath == _testFile);
+        }
+
+        /// <summary>
+        /// Проверяет, что RegisterFile с пустым путём вызывает ArgumentNullException.
+        /// </summary>
+        /// <exception cref="ArgumentNullException">Ожидается при пустом пути.</exception>
+        [Fact]
+        public void RegisterFile_EmptyPath_ThrowsArgumentNullException()
+        {
+            Assert.Throws<ArgumentNullException>(() => _integrityService.RegisterFile(""));
+        }
+
+        /// <summary>
+        /// Проверяет, что VerifyFile с пустым путём вызывает ArgumentNullException.
+        /// </summary>
+        /// <exception cref="ArgumentNullException">Ожидается при пустом пути.</exception>
+        [Fact]
+        public void VerifyFile_EmptyPath_ThrowsArgumentNullException()
+        {
+            Assert.Throws<ArgumentNullException>(() => _integrityService.VerifyFile(""));
+        }
+        /// <summary>
+        /// Проверяет, что VerifyFile выбрасывает IOException при ошибке чтения файла (файл заблокирован).
+        /// </summary>
+        /// <exception cref="IOException">Ожидается при блокировке файла.</exception>
+        [Fact]
+        public void VerifyFile_WhenFileLocked_ThrowsIOException()
+        {
+            CreateTestFile("data");
+            _integrityService.RegisterFile(_testFile, "SHA256");
+            using (var fs = new FileStream(_testFile, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+            {
+                // Файл заблокирован, при попытке чтения в VerifyFile возникнет IOException
+                Assert.Throws<IOException>(() => _integrityService.VerifyFile(_testFile));
+            }
+        }
+
+        /// <summary>
+        /// Проверяет, что RegisterFile выбрасывает IOException при ошибке чтения файла (файл заблокирован).
+        /// </summary>
+        /// <exception cref="IOException">Ожидается при блокировке файла.</exception>
+        [Fact]
+        public void RegisterFile_WhenFileLocked_ThrowsIOException()
+        {
+            CreateTestFile("data");
+            using (var fs = new FileStream(_testFile, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+            {
+                Assert.Throws<IOException>(() => _integrityService.RegisterFile(_testFile, "SHA256"));
+            }
+        }
+        /// <summary>
+        /// Проверяет, что GetTamperedFiles возвращает пустой список, когда все файлы не изменены.
+        /// Покрывает ветку, где VerifyFile не выбрасывает исключение и возвращает true.
+        /// </summary>
+        [Fact]
+        public void GetTamperedFiles_AllFilesIntact_ReturnsEmpty()
+        {
+            CreateTestFile("data1");
+            _integrityService.RegisterFile(_testFile, "SHA256");
+
+            string file2 = Path.GetTempFileName();
+            File.WriteAllText(file2, "data2");
+            _integrityService.RegisterFile(file2, "SHA256");
+
+            var tampered = _integrityService.GetTamperedFiles();
+            Assert.Empty(tampered);
+
+            File.Delete(file2);
+        }
+
     }
 }

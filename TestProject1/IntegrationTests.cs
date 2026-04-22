@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
 using HashSystem.Services;
 using Xunit;
@@ -17,9 +18,12 @@ namespace TestProject1
         private readonly FileIntegrityService _fileService;
         private readonly StorageService _storageService;
 
+        /// <summary>
+        /// Инициализирует новый экземпляр тестового класса.
+        /// Создаёт уникальную временную папку для изоляции теста и экземпляры всех сервисов.
+        /// </summary>
         public IntegrationTests()
         {
-            // Уникальная временная папка для каждого запуска теста
             _tempDir = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString());
             Directory.CreateDirectory(_tempDir);
             _hashService = new HashService();
@@ -28,6 +32,9 @@ namespace TestProject1
             _storageService = new StorageService();
         }
 
+        /// <summary>
+        /// Освобождает ресурсы: удаляет временную папку и все её содержимое.
+        /// </summary>
         public void Dispose()
         {
             if (Directory.Exists(_tempDir))
@@ -42,32 +49,27 @@ namespace TestProject1
         /// 4. Сохранение всех данных (пользователи, записи файлов) в файлы.
         /// 5. Загрузка данных обратно и проверка количества записей.
         /// </summary>
+        /// <exception cref="DataMisalignedException">Ожидается при проверке изменённого файла.</exception>
         [Fact]
         public void FullWorkflow_RegisterUserAndFile_CheckIntegrity()
         {
-            // Пути к файлам внутри временной папки
             string userFile = Path.Combine(_tempDir, "users.txt");
             string recordsFile = Path.Combine(_tempDir, "records.txt");
             string testFile = Path.Combine(_tempDir, "test.txt");
 
-            // Регистрация пользователя
             _userService.RegisterUser("alice", "pass123");
             Assert.True(_userService.VerifyPassword("alice", "pass123"));
 
-            // Регистрация файла
             File.WriteAllText(testFile, "hello world");
             var record = _fileService.RegisterFile(testFile, "SHA256");
             Assert.True(_fileService.VerifyFile(testFile));
 
-            // Изменение файла
             File.WriteAllText(testFile, "changed");
             Assert.Throws<System.DataMisalignedException>(() => _fileService.VerifyFile(testFile));
 
-            // Сохранение
             _storageService.SaveCredentials(userFile, _userService.GetAll());
             _storageService.SaveFileRecords(recordsFile, _fileService.GetAll());
 
-            // Загрузка и проверка
             var loadedUsers = _storageService.LoadCredentials(userFile);
             var loadedRecords = _storageService.LoadFileRecords(recordsFile);
             Assert.Single(loadedUsers);
